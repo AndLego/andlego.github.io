@@ -1,0 +1,27 @@
+:root {
+  --negro-lv1: #26292B;
+  --negro-lv2: #2e3239;
+  --azul-lv1: #5f7adb;
+  --azul-lv2: #a2b2ee;
+  --blanco: #eaeef5;
+
+  --cursive: 'Shadows Into Light', cursive;
+  --normal: 'Ubuntu', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px dotted red; */
+}
+
+html {
+  font-size: 62.5%;
+  background-color: var(--negro-lv1);
+}
+
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+}
