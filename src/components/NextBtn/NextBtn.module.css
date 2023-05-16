@@ -1,0 +1,11 @@
+.NextBtn {
+    background-color: var(--azul-lv1);
+    color: var(--blanco);
+    font-family: var(--cursive);
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}

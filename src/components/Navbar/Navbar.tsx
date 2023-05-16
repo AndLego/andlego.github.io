@@ -1,7 +1,15 @@
+import React from 'react';
 import { NavLink, Link } from "react-router-dom"
 import style from "./Navbar.module.css"
 
 const Navbar = () => {
+    const [openMenu, setOpenMenu] = React.useState(false);
+
+    const toggleMenu = () => {
+        setOpenMenu(!openMenu);
+        console.log("holi")
+    };
+
     return (
         <nav className={style.nav}>
             <Link to="/">
@@ -24,6 +32,18 @@ const Navbar = () => {
                 }
                 <button>Download CV</button>
             </ul>
+
+            {/* burguer boton */}
+            <button className={`${style.burguer} ${openMenu ? style.active : ''}`} onClick={toggleMenu}>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            
+
+
         </nav >
     );
 }
@@ -42,7 +62,7 @@ const rutas: Ruta[] = [
         ruta: "projects"
     },
     {
-        id: 1,
+        id: 3,
         to: "/contact",
         ruta: "contact"
     },

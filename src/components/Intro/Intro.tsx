@@ -1,3 +1,4 @@
+import NextBtn from "../NextBtn/NextBtn.jsx"
 import style from "./Intro.module.css"
 
 const Intro = () => {
@@ -12,7 +13,7 @@ const Intro = () => {
                     <p>My objective is to build engaging and user-friendly websites that help businesses achieve their goals. </p>
                 </div>
                 <p>Please feel free to explore my site and see my work for yourself.</p>
-                <button>Explore</button>
+                <NextBtn num={2} texto="Explore" />
             </article>
 
             <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">

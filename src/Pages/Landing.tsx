@@ -1,11 +1,12 @@
 import React from 'react';
-import { About, Intro } from '../components';
+import { About, Intro, Skills } from '../components';
 
 const Landing = () => {
     return (
         <>
             <Intro />
             <About />
+            <Skills />
         </>
     );
 }
