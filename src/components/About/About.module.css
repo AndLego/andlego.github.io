@@ -97,3 +97,15 @@
     font-family: var(--normal);
     font-size: 2rem;
 }
+
+
+@media (max-width: 540px) {
+    .about figure {
+        height: 439px;
+        overflow: hidden;
+    }
+
+    .overflowBody {
+        bottom: -43px;
+    }
+}

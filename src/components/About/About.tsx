@@ -3,7 +3,7 @@ import style from "./About.module.css"
 
 const About = () => {
     return (
-        <section id="seccion2" className={style.about}>
+        <section className={style.about}>
             <div>Take a moment and learn my background.</div>
             <figure className={style.avatarContainer}>
                 <img className={style.head} src="https://i.postimg.cc/Jz88JLwz/cabeza-removebg-preview.png" alt="head" />

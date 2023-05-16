@@ -1,6 +1,6 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Landing from "./Pages/Landing";
-import { Navbar } from "./components";
+import { BurguerBtn, Navbar } from "./components";
 
 function App() {
 
@@ -8,6 +8,7 @@ function App() {
     <>
       <HashRouter>
         <Navbar />
+        <BurguerBtn />
         <Routes>
           <Route path="/" element={<Landing />} />
         </Routes>

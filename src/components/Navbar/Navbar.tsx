@@ -1,75 +1,42 @@
 import React from 'react';
-import { NavLink, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 import style from "./Navbar.module.css"
+import Routes from './Routes/Routes';
 
 const Navbar = () => {
-    const [openMenu, setOpenMenu] = React.useState(false);
+    // efecto sticky al scroll
+    const [isSticky, setIsSticky] = React.useState(false);
+    const navbarRef = React.useRef<HTMLDivElement>(null);
 
-    const toggleMenu = () => {
-        setOpenMenu(!openMenu);
-        console.log("holi")
-    };
+    React.useEffect(() => {
+        const handleScroll = () => {
+            const navbar = navbarRef.current;
+            const sticky = navbar?.offsetTop || 0;
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            setIsSticky(scrollTop >= sticky);
+
+            if (scrollTop <= 0) {
+                setIsSticky(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
-        <nav className={style.nav}>
+        <nav className={`${style.nav} ${isSticky ? style.scrolled : ''}`}>
             <Link to="/">
                 <h1>AndLego</h1>
             </Link>
-            <ul>
-                {
-                    rutas.map((ruta) => (
-                        <NavLink key={ruta.id}
-                            to={ruta.to}
-                            style={({ isActive }) => ({
-                                color: isActive ? "var(--azul-lv2)" : "var(--blanco)",
-                                fontWeight: isActive ? "600" : "100"
-                            })}
-                        >
-                            {ruta.ruta}
 
-                        </NavLink>
-                    ))
-                }
-                <button>Download CV</button>
-            </ul>
-
-            {/* burguer boton */}
-            <button className={`${style.burguer} ${openMenu ? style.active : ''}`} onClick={toggleMenu}>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            
-
+            <Routes mobile={"desktop"} />
 
         </nav >
     );
 }
 
 export default Navbar;
-
-const rutas: Ruta[] = [
-    {
-        id: 1,
-        to: "/",
-        ruta: "home"
-    },
-    {
-        id: 2,
-        to: "/projects",
-        ruta: "projects"
-    },
-    {
-        id: 3,
-        to: "/contact",
-        ruta: "contact"
-    },
-]
-
-interface Ruta {
-    id: number,
-    to: string,
-    ruta: string
-}
