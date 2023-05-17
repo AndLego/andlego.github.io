@@ -1,0 +1,38 @@
+.forms {}
+
+.forms h1 {
+    color: var(--blanco);
+    font-family: var(--normal);
+    font-size: 2.8rem;
+    margin: 40px auto;
+    width: fit-content;
+}
+
+.options {
+    display: flex;
+    gap: 28px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.options p {
+    color: var(--blanco);
+    font-family: var(--cursive);
+    font-size: 2rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.options .active {
+    border-bottom: 4px solid var(--azul-lv1);
+    border-radius: 0 0 25% 25%;
+    padding-bottom: 4px;
+    color: var(--azul-lv1);
+    font-weight: 600;
+    font-size: 2.2rem;
+    transition: all ease-in-out .3s;
+}

@@ -31,6 +31,7 @@
 }
 
 .Footer article>div svg {
+    color: var(--negro-lv2);
     font-size: 3rem;
     border: 2px solid;
     padding: 4px;
