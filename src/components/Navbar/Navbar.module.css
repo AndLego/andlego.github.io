@@ -36,7 +36,7 @@ a {
     left: 160px;
 }
 
-.mobile button {
+.download {
     font-family: var(--cursive);
     font-size: 1.8rem;
     letter-spacing: 1px;
@@ -60,7 +60,7 @@ a {
     text-transform: capitalize;
 }
 
-.nav ul button {
+nav > ul .downloadDeskTop {
     background-color: var(--azul-lv1);
     color: var(--blanco);
     font-family: var(--cursive);

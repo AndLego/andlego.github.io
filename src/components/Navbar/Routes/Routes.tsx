@@ -1,13 +1,15 @@
 import { NavLink } from "react-router-dom"
 import style from "../Navbar.module.css"
 
-const Routes = ({ mobile }: { mobile: string }) => {
+const Routes = ({ mobile, toggleMenu }: { mobile: string, toggleMenu?: () => void }) => {
     return (
         <ul className={`${mobile === "desktop" ? style.desktop : style.mobile}`}>
             {
                 rutas.map((ruta) => (
                     <NavLink key={ruta.id}
                         to={ruta.to}
+                        className={style.navBtns}
+                        onClick={toggleMenu}
                         style={({ isActive }) => (
                             mobile === "desktop" ? (
                                 {
@@ -27,7 +29,7 @@ const Routes = ({ mobile }: { mobile: string }) => {
                     </NavLink>
                 ))
             }
-            <button>Download CV</button>
+            <a className={`${mobile === "desktop" ? style.downloadDeskTop : style.download}`} href="/FrontEnd_Andres_Leon_cv_en.pdf" download>Download CV</a>
         </ul>
     );
 }

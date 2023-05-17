@@ -106,6 +106,15 @@ const projects: Project[] = [
         image: 'https://i.postimg.cc/k42bzsYv/jibaron.png',
         description:
             'Full stack app using Reactjs, Firebase, Framer motion, css. This projects allows the user to add new items and to maintain all the things over the firestore database'
+    },
+    {
+        id: 11,
+        name: 'Cardanni',
+        live: 'https://cardanni.netlify.app/',
+        repository: 'https://github.com/AndLego/cardani',
+        image: 'https://i.ibb.co/jT3sPws/cardanni-front.png',
+        description:
+            'Web Page for a bakery called Cardanni, carrousel for events on landing, menu with beatiful design, working cart that sends the buying list to the bakery whatsapp.'
     }
 ]
 

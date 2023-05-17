@@ -1,6 +1,7 @@
 import { projects } from "../data/projects";
 import { FiGithub } from 'react-icons/fi';
 import { MdLiveTv } from 'react-icons/md';
+import LazyImage from "../utils/LazyImage";
 
 import style from "./pages.module.css"
 
@@ -12,7 +13,7 @@ const Projects = () => {
                 <article key={project.id} className={style.projectWrapper}>
                     <div className={style.card}>
                         <div className={style.front}>
-                            <img src={project.image} alt={project.name} />
+                            <LazyImage src={project.image} alt={project.name} />
                         </div>
                         <div className={style.back}>
                             <h1>{project.name}</h1>
@@ -24,8 +25,6 @@ const Projects = () => {
                         </div>
                     </div>
                 </article>
-
-
             ))
             }
         </section >

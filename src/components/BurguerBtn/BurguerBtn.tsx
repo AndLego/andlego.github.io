@@ -19,7 +19,7 @@ const BurguerBtn = () => {
             </button>
 
             <div className={`${style.bubble} ${openMenu ? style.open : style.close}`}>
-                <Routes mobile={"mobile"} />
+                <Routes mobile={"mobile"} toggleMenu={toggleMenu} />
             </div>
 
         </div>
