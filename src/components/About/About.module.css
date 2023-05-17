@@ -1,5 +1,5 @@
 .about {
-    background-color: #eaeef5;
+    background-color: #d9e0fd;
     position: relative;
     padding: 180px 12px;
     display: flex;
@@ -9,7 +9,7 @@
 }
 
 .about>div {
-    background-color: var(--azul-lv2);
+    background-color: var(--azul-lv1);
     width: 70%;
     position: absolute;
     font-family: var(--cursive);
@@ -21,6 +21,7 @@
     left: -50%;
     transform: translate(92%, 0);
     border-radius: 50px;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .about figure {
@@ -74,6 +75,8 @@
 }
 
 .about article {
+    background-color: #444f63;
+    color: var(--blanco);
     max-width: 650px;
     display: flex;
     flex-direction: column;
