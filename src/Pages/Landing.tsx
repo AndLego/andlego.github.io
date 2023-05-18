@@ -1,4 +1,3 @@
-import React from 'react';
 import { About, Intro, Skills } from '../components';
 
 const Landing = () => {

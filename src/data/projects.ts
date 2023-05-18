@@ -115,6 +115,15 @@ const projects: Project[] = [
         image: 'https://i.ibb.co/jT3sPws/cardanni-front.png',
         description:
             'Web Page for a bakery called Cardanni, carrousel for events on landing, menu with beatiful design, working cart that sends the buying list to the bakery whatsapp.'
+    },
+    {
+        id: 12,
+        name: 'Portfolio-v3-Idea',
+        live: 'https://main--tourmaline-elf-18e57f.netlify.app/',
+        repository: 'https://github.com/AndLego/portafolio-v3',
+        image: 'https://i.ibb.co/7zTfbxz/portfolio-v3.png',
+        description:
+            'Single Page App for a portfolio with a parallax animation on the background, And working email form to user.'
     }
 ]
 

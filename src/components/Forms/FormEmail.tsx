@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./Form.module.css";
-import { FiGithub, FiTwitter, FiLinkedin, FiSend } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiSend } from "react-icons/fi";
 
 const Form = () => {
     const [contact, setContact] = React.useState(true);
     const [thanks, setThanks] = React.useState(false);
 
     const [visitor, setVisitor] = React.useState("");
-    const [visitorMail, setVisitorMail] = React.useState("");
-    const [visitorMessage, setVisitorMessage] = React.useState("");
+    const [, setVisitorMail] = React.useState("");
+    const [, setVisitorMessage] = React.useState("");
 
     ////cuadrar un estado para la form y otro para thanks, para manerja el laoding
     const user = React.useRef<HTMLInputElement>(null);
