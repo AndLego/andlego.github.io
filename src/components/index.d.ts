@@ -1,9 +1,0 @@
-export { default as Navbar } from "./Navbar/Navbar.tsx";
-export { default as Intro } from "./Intro/Intro.tsx";
-export { default as About } from "./About/About.tsx";
-export { default as Skills } from "./Skills/Skills.tsx";
-export { default as BurguerBtn } from "./BurguerBtn/BurguerBtn.tsx";
-export { default as Footer } from "./Footer/Footer.tsx";
-export { default as FormEmail } from "./Forms/FormEmail.tsx";
-export { default as FormWhatsapp } from "./Forms/FormWhatsapp.tsx";
-export { default as ScrollToTop } from "./ScrollToTop/ScrollToTop.tsx";
