@@ -124,6 +124,15 @@ const projects: Project[] = [
         image: 'https://i.ibb.co/7zTfbxz/portfolio-v3.png',
         description:
             'Single Page App for a portfolio with a parallax animation on the background, And working email form to user.'
+    },
+    {
+        id: 13,
+        name: 'Blog',
+        live: 'https://blog-ts.netlify.app/',
+        repository: 'https://github.com/AndLego/blog-ts',
+        image: 'https://i.postimg.cc/m28Nj1Sw/blog.png',
+        description:
+            'Full CRUD project. Create your username, and posts. Edit them, comment or delete if you want.'
     }
 ]
 

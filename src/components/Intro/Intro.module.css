@@ -1,15 +1,18 @@
 .hero {
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 0 12px;
     flex-wrap: wrap;
-    position: relative;
+    background: linear-gradient(to right, var(--negro-lv1), transparent), url(https://i.postimg.cc/JnTrrG47/RPG-40-robot-developing-apps-and-web-designs-screen-showing-h-0.jpg);
+    background-repeat: no-repeat;
+    height: 660px;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .hero article {
-    padding: 40px;
-    flex: 1 1 50%;
+    max-width: 500px;
+    margin-left: 6%;
 }
 
 .hero article h1 {
@@ -72,12 +75,14 @@
 }
 
 @media (max-width: 800px) {
-    .container article {
-        flex-basis: 100%;
+
+    .hero article {
+        margin: 0 auto;
+        padding: 0 20px;
     }
 
-    .hero{
-    padding: 0 4px;
+    .hero {
+        padding: 0 4px;
     }
 
     .hero svg {
