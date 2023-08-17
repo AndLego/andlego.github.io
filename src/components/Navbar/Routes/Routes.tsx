@@ -13,7 +13,7 @@ const Routes = ({ mobile, toggleMenu }: { mobile: string, toggleMenu?: () => voi
                         style={({ isActive }) => (
                             mobile === "desktop" ? (
                                 {
-                                    color: isActive ? "var(--azul-lv2)" : "var(--blanco)",
+                                    color: isActive ? "var(--resalto)" : "var(--blanco)",
                                     fontWeight: isActive ? "600" : "100"
                                 }
                             ) :
@@ -29,7 +29,6 @@ const Routes = ({ mobile, toggleMenu }: { mobile: string, toggleMenu?: () => voi
                     </NavLink>
                 ))
             }
-            <a className={`${mobile === "desktop" ? style.downloadDeskTop : style.download}`} href="/FrontEnd_Andres_Leon_cv_en.pdf" download>Download CV</a>
         </ul>
     );
 }

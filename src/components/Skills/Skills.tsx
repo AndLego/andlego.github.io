@@ -10,8 +10,7 @@ const Skills = () => {
     return (
         <section className={style.Skills}>
             <div id="seccion3" className={style.pointer}></div>
-            <div className={style.wave}>
-            </div>
+          
             <h1>What do I offer?</h1>
             <article className={style.cards}>
                 <div>

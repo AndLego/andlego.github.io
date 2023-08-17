@@ -10,10 +10,7 @@ const Footer = () => {
     console.log(location.pathname)
 
     return (
-        <footer className={style.Footer}>
-            <div className={style.wave2}>
-            </div>
-
+        <section className={style.Footer}>
             {location.pathname !== "/contact" &&
                 <div className={style.ContactMe}>
                     <p>Interested in working together?</p>
@@ -34,7 +31,7 @@ const Footer = () => {
                 </div>
             </article>
             <span>Made with Love in 2023!</span>
-        </footer>
+        </section>
     );
 }
 

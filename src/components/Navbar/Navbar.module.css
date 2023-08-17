@@ -10,7 +10,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 12px 24px;
-    background: transparent;
+    background: #16202b;
 }
 
 .nav.scrolled {
@@ -18,10 +18,23 @@ a {
     backdrop-filter: blur(20px) brightness(0.5);
 }
 
-.nav h1 {
-    font-family: var(--cursive);
-    font-size: 3.2rem;
+.nav .logo_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
     color: var(--blanco);
+}
+
+.nav .logo_container .logo {
+    font-family: var(--logo);
+    font-size: 2.8rem;
+    line-height: 1.2;
+}
+
+.nav .logo_container span:last-of-type {
+    font-size: 0.8rem;
+    letter-spacing: 4px;
 }
 
 .mobile {
@@ -60,8 +73,8 @@ a {
     text-transform: capitalize;
 }
 
-nav > ul .downloadDeskTop {
-    background-color: var(--azul-lv1);
+nav>ul .downloadDeskTop {
+    background-color: var(--resalto);
     color: var(--blanco);
     font-family: var(--cursive);
     font-size: 2rem;

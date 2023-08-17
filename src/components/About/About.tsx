@@ -1,10 +1,8 @@
-import NextBtn from "../NextBtn/NextBtn";
 import style from "./About.module.css"
 
 const About = () => {
     return (
         <section className={style.about}>
-            <div>Take a moment and learn my background.</div>
             <figure className={style.avatarContainer}>
                 <img className={style.head} src="https://i.postimg.cc/Jz88JLwz/cabeza-removebg-preview.png" alt="head" />
                 <div className={style.overflowBody}>
@@ -21,7 +19,6 @@ const About = () => {
                 <p> I believe that my dedication to learning and my willingness to tackle difficult problems make me a valuable asset to any development team.</p>
 
                 <p>When I'm not coding, you can find me exploring the outdoors or enjoying indoors with my dog. I also enjoy watching live streaming, movies and anime.</p>
-                <NextBtn num={3} texto="Keep Going!" />
             </article>
 
         </section>

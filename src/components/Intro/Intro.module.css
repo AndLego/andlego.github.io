@@ -1,23 +1,118 @@
 .hero {
-    display: flex;
-    align-items: center;
-    padding: 0 12px;
-    flex-wrap: wrap;
-    background: linear-gradient(to right, var(--negro-lv1), transparent), url(https://i.postimg.cc/JnTrrG47/RPG-40-robot-developing-apps-and-web-designs-screen-showing-h-0.jpg);
-    background-repeat: no-repeat;
-    height: 660px;
-    background-size: cover;
-    background-attachment: fixed;
+    position: relative;
+}
+
+.hero .imgContainer {
+    position: absolute;
+    left: calc(62% - 461px);
+    top: calc(88% - 600px);
+    z-index: 0;
+}
+
+.hero .circle1,
+.hero .circle2,
+.hero .circle3 {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 140px;
+    left: 130px;
+    border-radius: 50%;
+    box-shadow:
+        inset 0 0 30px 0 #fff,
+        inset 20px 0 30px #ffd400,
+        inset -20px 0 30px red,
+        inset 20px 0 300px #ff40d6,
+        inset -20px 0 300px #e3ff4b,
+        0 0 50px #fff,
+        -10px 0 100px #fbff00,
+        10px 0 80px #f55;
+}
+
+
+.hero .circle1 {
+    animation: orbit 4s ease-in-out infinite;
+}
+
+.hero .circle2 {
+    animation: orbit 4s ease-in-out infinite;
+    animation-delay: -1.3s;
+}
+
+.hero .circle3 {
+    animation: orbit 4s ease-in-out infinite;
+    animation-delay: -2.6s;
+}
+
+@keyframes orbit {
+    0% {
+        transform: translateX(-20px) scale(0.8);
+        z-index: 5;
+    }
+
+    50% {
+        transform: translateX(320px) scale(1.2);
+        z-index: 5;
+    }
+
+    50.00001% {
+        transform: translateX(320px) scale(1.2);
+        z-index: 0;
+    }
+
+    100% {
+        transform: translateX(-20px) scale(0.8);
+        z-index: 0;
+    }
+}
+
+/* 
+@keyframes orbitRight {
+    0% {
+        transform: translateX(143px) scale(1.2);
+        z-index: 1;
+    }
+
+    25% {
+        transform: translateX(286px) scale(1);
+        z-index: 1;
+    }
+
+    50% {
+        transform: translateX(143px) scale(0.8);
+        z-index: 0;
+    }
+
+    75% {
+        transform: translateX(0px) scale(1);
+        z-index: 0;
+    }
+    100% {
+        transform: translateX(143px) scale(1.2);
+        z-index: 10;
+    }
+} */
+
+.hero img {
+    filter: drop-shadow(2px -8px 9px var(--negro-lv1));
+    height: 700px;
+    z-index: 5;
 }
 
 .hero article {
-    max-width: 500px;
-    margin-left: 6%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    z-index: 4;
 }
 
 .hero article h1 {
-    font-family: var(--cursive);
-    font-size: 4rem;
+    font-family: var(--normal);
+    font-size: 10rem;
     color: var(--blanco);
 
 }
@@ -26,14 +121,6 @@
     font-family: var(--normal);
     font-size: 2rem;
     color: var(--blanco);
-}
-
-.hero article>p:first-of-type {
-    margin: 12px 0;
-}
-
-.hero article>p:last-of-type {
-    margin-bottom: 32px;
 }
 
 .hero .extra {
@@ -52,7 +139,7 @@
 }
 
 .hero article p span {
-    color: var(--azul-lv2);
+    color: var(--resalto);
     font-weight: 600;
 }
 

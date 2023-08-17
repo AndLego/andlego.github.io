@@ -7,7 +7,7 @@ import Contact from "./Pages/Contact";
 function App() {
 
   return (
-    <>
+    <div className="Container">
       <HashRouter>
         <Navbar />
         <BurguerBtn />
@@ -19,7 +19,7 @@ function App() {
         </Routes>
         <Footer />
       </HashRouter>
-    </>
+    </div>
   )
 }
 

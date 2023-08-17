@@ -1,11 +1,12 @@
 :root {
   --negro-lv1: #26292B;
   --negro-lv2: #2e3239;
+
+  --resalto: #eee7a2;
   --azul-lv1: #5f7adb;
   --azul-lv2: #a2b2ee;
   --blanco: #eaeef5;
 
-  --cursive: 'Shadows Into Light', cursive;
   --normal: 'Ubuntu', sans-serif;
 }
 
@@ -18,10 +19,35 @@
 
 html {
   font-size: 62.5%;
-  background-color: var(--negro-lv1);
+  background: rgb(22, 32, 43);
+  background: linear-gradient(180deg, rgba(22, 32, 43, 1) 0%, rgba(26, 25, 29, 1) 100%);
 }
 
 body {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.Container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.Container::-webkit-scrollbar {
+  display: none;
+}
+
+
+section {
+  font-family: var(--normal);
+  height: 100%;
+  scroll-snap-align: center;
+  padding-top: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  background: linear-gradient(180deg, rgba(22, 32, 43, 1) 0%, rgba(26, 25, 29, 1) 100%);
 }
