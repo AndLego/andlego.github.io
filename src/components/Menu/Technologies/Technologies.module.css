@@ -1,0 +1,29 @@
+.title {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.tools {
+    width: 80%;
+    height: 360px;
+}
+
+.itemWrapper {
+    list-style: none;
+}
+
+.itemWrapper div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.itemWrapper div svg {
+    font-size: 2.4rem;
+}
+
+.itemWrapper div p {}

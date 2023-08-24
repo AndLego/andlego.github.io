@@ -45,7 +45,7 @@ section {
   font-family: var(--normal);
   height: 100%;
   scroll-snap-align: center;
-  padding-top: 60px;
+  padding-top: 66px;
   max-width: 1400px;
   margin: 0 auto;
   display: flex;

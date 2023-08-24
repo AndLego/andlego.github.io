@@ -92,3 +92,24 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+.linkTo {
+    color: var(--resalto);
+    font-size: 2.2rem;
+    border: 1px solid var(--resalto);
+    border-radius: 4px;
+    padding: 4px 12px;
+    width: 180px;
+    text-align: center;
+    margin-top: 20px;
+    background: linear-gradient(to left, transparent 50%, var(--resalto) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s, color 0.5s;
+    cursor: pointer;
+}
+
+.linkTo:hover {
+    background-position: left bottom;
+    color: var(--negro-lv1);
+}

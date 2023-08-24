@@ -1,0 +1,61 @@
+.works {}
+
+.works .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.works .left ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.works .left li {
+    font-size: 6.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--blanco);
+    padding-left: 20px;
+    position: relative;
+    /* font-family: var(--titles); */
+}
+
+.works .left li::after {
+    content: var(--item-content);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--blanco);
+    padding-left: 20px;
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.works .left li:hover::after {
+    animation: moveText 0.5s linear both;
+}
+
+.works .left ul .currentStyle {
+    color: var(--blanco);
+}
+
+@keyframes moveText {
+    to {
+        width: 100%
+    }
+}
+
+.works .right {
+    flex: 1;
+    color: var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}

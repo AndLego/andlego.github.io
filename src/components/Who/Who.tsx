@@ -25,8 +25,8 @@ const Who = () => {
                 </div>
                 <p>I'm a developer who is passionate about learning new technologies and applying them. I have developed multiple projects for almost 2 years and have enjoyed every piece of code on them.</p>
 
-                <Link to="/projects">
-                    See my work
+                <Link to="/projects" className={style.linkTo}>
+                    Check my work
                 </Link>
             </article>
 
