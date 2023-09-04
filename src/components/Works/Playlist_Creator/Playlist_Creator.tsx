@@ -1,5 +1,5 @@
 import React from 'react';
-import style from "./Technologies.module.css"
+import style from "./Playlist_Creator.module.css"
 import { TbBrandCss3, TbBrandGraphql, TbBrandJavascript, TbBrandMongodb, TbBrandReact, TbBrandTypescript } from 'react-icons/tb';
 import { DiNodejs } from 'react-icons/di';
 

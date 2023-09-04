@@ -1,4 +1,6 @@
-.works {}
+.works {
+  padding-top: 66px;
+}
 
 .works .left {
     flex: 1;

@@ -1,11 +1,11 @@
-import { Intro, Menu, Skills, Who } from '../components';
+import { Intro, Works, Skills, Who } from '../components';
 
 const Landing = () => {
     return (
         <>
             <Intro />
             <Who />
-            <Menu />
+            <Works />
             <Skills />
         </>
     );
