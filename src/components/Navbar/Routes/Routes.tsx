@@ -47,11 +47,6 @@ const rutas: Ruta[] = [
         to: "/projects",
         ruta: "projects"
     },
-    {
-        id: 3,
-        to: "/contact",
-        ruta: "contact"
-    },
 ]
 
 interface Ruta {
