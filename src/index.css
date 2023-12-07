@@ -8,7 +8,12 @@
   --blanco: #eaeef5;
 
   --normal: 'Ubuntu', sans-serif;
+
+  --cursorX: 50vw;
+  --cursorY: 50vh;
 }
+
+
 
 * {
   padding: 0;

@@ -10,7 +10,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 12px 24px;
-    background: #16202b;
+    /* background: #16202b; */
 }
 
 .nav.scrolled {
