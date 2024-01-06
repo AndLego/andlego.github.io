@@ -6,12 +6,13 @@ import Playlist_Creator from './Playlist_Creator/Playlist_Creator';
 import Just_A_Blog from './Just_A_Blog/Just_A_Blog';
 import Hobbies from './Hobbies/Hobbies';
 import My_links from './My_links/My_links';
+import Project from './Project/Project';
 
 const data = [
     "Restaurant Manager",
     "Playlist Creator",
     "Just A Blog",
-    "Hobbies",
+    "More",
     "My Links"
 ]
 
@@ -22,8 +23,8 @@ interface ComponentMap {
 const componentMap: ComponentMap = {
     "Restaurant Manager": Restaurant_Interface,
     "Playlist Creator": Playlist_Creator,
-    "Just A Blog": Just_A_Blog,
-    "Hobbies": Hobbies,
+    "Just A Blog": Project,
+    "More": Hobbies,
     "My Links": My_links
 };
 
@@ -53,9 +54,10 @@ const Menu = () => {
                     )}
                 </ul>
             </article>
-            <article className={style.right}>
+            <Project />
+            {/* <article className={style.right}>
                 <RenderComponent />
-            </article>
+            </article> */}
         </section>
     );
 }
