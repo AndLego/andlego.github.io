@@ -1,47 +1,35 @@
-.forms h1 {
+/**proyectos*/
+
+.categories {
+    display: flex;
     color: var(--blanco);
     font-family: var(--normal);
-    font-size: 2.8rem;
-    margin: 40px auto;
-    width: fit-content;
-}
-
-.options {
-    display: flex;
-    gap: 28px;
-    width: 100%;
     justify-content: center;
-    margin-bottom: 40px;
-}
-
-.options p {
-    color: var(--blanco);
-    font-family: var(--cursive);
+    gap: 40px;
     font-size: 2rem;
+    padding: 12px 0;
+}
+
+.categories .activeCategory {
+    color: var(--resalto);
+    padding: 0 4px 2px 4px;
+    border-bottom: 3px solid var(--resalto);
+    border-radius: 0 0 8px 8px;
+}
+
+.categories h3:hover {
     cursor: pointer;
-    letter-spacing: 1px;
-    display: flex;
-    gap: 8px;
-    align-items: center;
+    color: var(--resalto);
+    transition: .3s ease-in-out all;
 }
-
-.options .active {
-    border-bottom: 4px solid var(--azul-lv1);
-    border-radius: 0 0 25% 25%;
-    padding-bottom: 4px;
-    color: var(--azul-lv1);
-    font-weight: 600;
-    font-size: 2.2rem;
-    transition: all ease-in-out .3s;
-}
-
-/**proyectos*/
 
 .projects {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    scroll-snap-align: none;
+    background: none;
 }
 
 .projects article {

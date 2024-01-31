@@ -1,0 +1,11 @@
+.Container {
+    height: 90vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.Container::-webkit-scrollbar {
+    display: none;
+}
