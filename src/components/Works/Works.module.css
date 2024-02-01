@@ -1,11 +1,12 @@
 .works {
-  padding-top: 66px;
+    padding-top: 66px;
 }
 
 .works .left {
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .works .left ul {

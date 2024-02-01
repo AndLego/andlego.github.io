@@ -1,4 +1,4 @@
-import { Intro, Works, Skills, Who, Footer } from '../components';
+import { Intro, Works, Who, Footer } from '../components';
 import style from "./landing.module.css"
 
 const Landing = () => {
@@ -7,7 +7,6 @@ const Landing = () => {
             <Intro />
             <Who />
             <Works />
-            <Skills />
             <Footer />
         </div>
     );
