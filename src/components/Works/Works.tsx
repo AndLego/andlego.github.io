@@ -1,31 +1,26 @@
 import React from 'react';
 import { CSSProperties } from 'react';
 import style from "./Works.module.css"
-import Restaurant_Interface from './Restaurant_Interface/Restaurant_Interface';
-import Playlist_Creator from './Playlist_Creator/Playlist_Creator';
-import Just_A_Blog from './Just_A_Blog/Just_A_Blog';
-import Hobbies from './Hobbies/Hobbies';
-import My_links from './My_links/My_links';
 import Project from './Project/Project';
 
 const data = [
     "Front End",
     "Back End",
     "Full Stack",
-    "Hobbies",
-    "Links"
 ]
 
+interface ProjectProps {
+    work: string;
+}
+
 interface ComponentMap {
-    [key: string]: React.FC;
+    [key: string]: React.FC<ProjectProps>;
 }
 
 const componentMap: ComponentMap = {
-    "Front End": Restaurant_Interface,
-    "Back End": Playlist_Creator,
+    "Front End": Project,
+    "Back End": Project,
     "Full Stack": Project,
-    "Hobbies": Hobbies,
-    "Links": My_links
 };
 
 const Menu = () => {
@@ -54,10 +49,7 @@ const Menu = () => {
                     )}
                 </ul>
             </article>
-            <Project />
-            {/* <article className={style.right}>
-                <RenderComponent />
-            </article> */}
+            <RenderComponent work={work} />
         </section>
     );
 }

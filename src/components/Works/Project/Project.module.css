@@ -8,8 +8,8 @@
 
 .right .imageContainer {
     position: relative;
-    width: 480px;
-    height: 360px;
+    width: 80%;
+    height: 426px;
 }
 
 .right img {
