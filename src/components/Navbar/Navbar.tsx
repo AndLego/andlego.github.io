@@ -8,15 +8,17 @@ const Navbar = () => {
 
 
     return (
-        <nav className={style.nav}>
-            <Link to="/" className={style.logo_container}>
-                <span className={style.logo}>AndLego</span>
-                <span>the developer</span>
-            </Link>
+        <div className={style.navContainer}>
+            <nav className={style.nav}>
+                <Link to="/" className={style.logo_container}>
+                    <span className={style.logo}>AndLego</span>
+                    <span>the developer</span>
+                </Link>
 
-            <Routes mobile={"desktop"} />
+                <Routes mobile={"desktop"} />
 
-        </nav >
+            </nav >
+        </div>
     );
 }
 

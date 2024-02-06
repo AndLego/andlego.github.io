@@ -62,3 +62,19 @@
     flex-direction: column;
     gap: 40px;
 }
+
+
+@media (max-width: 800px) {
+    .works {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .works .left ul {
+        align-items: center;
+    }
+
+    .works .left li {
+        font-size: 4.4rem;
+    }
+}

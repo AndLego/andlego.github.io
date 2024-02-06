@@ -11,7 +11,6 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -28,8 +27,6 @@
 
 .who video {
     padding-top: 4px;
-    min-width: 1360px;
-    /* position: fixed; */
     top: 0;
     z-index: -999;
 }
@@ -50,11 +47,11 @@
     color: var(--blanco);
     position: absolute;
     max-width: 800px;
-    top: calc(72% - 300px);
-
+    top: calc(50%);
+    transform: translate(0px, -50%);
 }
 
-.content h1 {
+.content h2 {
     font-size: 5.4rem;
     letter-spacing: 2px;
 }
@@ -72,7 +69,7 @@
     border-radius: 4px;
 }
 
-.content div h2 {
+.content div h3 {
     color: var(--resalto);
     font-size: 2.2rem;
     font-weight: 100;
@@ -112,4 +109,17 @@
 .linkTo:hover {
     background-position: left bottom;
     color: var(--negro-lv1);
+}
+
+@media (max-width: 800px) {
+    .content {
+        padding: 0 60px;
+        text-align: center;
+    }
+
+    .content h2 {
+        font-size: 4rem;
+    }
+
+
 }

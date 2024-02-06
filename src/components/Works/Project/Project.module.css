@@ -90,3 +90,25 @@
         transform: rotate(5deg);
     }
 }
+
+@media (max-width: 1250px) {
+    .right {}
+
+    .right .imageContainer {
+        width: 100%;
+    }
+
+    .right .overlay {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(24 28 36));
+    }
+
+    .right .content {
+        transform: translate(-50%, -4%);
+        align-items: center;
+    }
+
+    .right .content h3,
+    .right .content p {
+        text-align: center;
+    }
+}

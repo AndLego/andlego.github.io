@@ -43,7 +43,7 @@ const Footer = () => {
                         <button type='submit'>Send</button>
                         <div>
                             <p>Living, learning, & leveling up one day at a time.</p>
-                            <p>Made with Love in 2023!</p>
+                            <p>Made with Love in 2024!</p>
                         </div>
                     </form>
                 }

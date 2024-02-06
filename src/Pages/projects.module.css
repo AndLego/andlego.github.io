@@ -1,5 +1,10 @@
 /**proyectos*/
 
+.Container {
+    height: 100vh;
+    padding-top: 80px;
+}
+
 .categories {
     display: flex;
     color: var(--blanco);

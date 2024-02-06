@@ -1,5 +1,4 @@
 import style from "./Who.module.css"
-import { Link } from "react-router-dom";
 
 const Who = () => {
     return (
@@ -18,16 +17,13 @@ const Who = () => {
             </div>
 
             <article className={style.content}>
-                <h1>Creating Awesomeness, Bug-Free Edition</h1>
+                <h2>Transformando Ideas en Experiencias Digitales</h2>
                 <div>
                     <div className={style.linea}></div>
-                    <h2>Who I Am</h2>
+                    <h3>Quien Soy</h3>
                 </div>
-                <p>I'm a developer who is passionate about learning new technologies and applying them. I have developed multiple projects for almost 2 years and have enjoyed every piece of code on them.</p>
+                <p>Como apasionado desarrollador, encuentro mi impulso en la constante búsqueda de nuevas tecnologías. Cada descubrimiento se convierte en una oportunidad emocionante para aplicar soluciones innovadoras en cada proyecto, construyendo así un repertorio diverso y actualizado.</p>
 
-                <Link to="/projects" className={style.linkTo}>
-                    Check my work
-                </Link>
             </article>
 
         </section>

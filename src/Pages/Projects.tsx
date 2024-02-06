@@ -38,7 +38,7 @@ const Projects = () => {
         : projects.filter(item => item.category === current)
 
     return (
-        <>
+        <div className={style.Container}>
             <div className={style.categories}>
                 {categories.map((item) => (
                     <h3
@@ -73,7 +73,7 @@ const Projects = () => {
                 ))
                 }
             </section >
-        </>
+        </div>
     );
 }
 
