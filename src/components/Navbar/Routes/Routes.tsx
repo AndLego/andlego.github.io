@@ -19,8 +19,9 @@ const Routes = ({ mobile, toggleMenu }: { mobile: string, toggleMenu?: () => voi
                             ) :
                                 (
                                     {
-                                        color: isActive ? "var(--negro-lv1)" : "var(--blanco)",
-                                        fontWeight: isActive ? "600" : "100"
+                                        color: isActive ? "Black" : "Black",
+                                        fontWeight: isActive ? "600" : "100",
+                                        fontSize: isActive ? "3.2rem" : "2rem"
                                     }
                                 )
                         )}

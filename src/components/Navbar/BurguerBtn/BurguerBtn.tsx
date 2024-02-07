@@ -1,6 +1,6 @@
 import React from 'react';
 import style from "./BurguerBtn.module.css"
-import Routes from '../Navbar/Routes/Routes';
+import Routes from '../Routes/Routes';
 
 const BurguerBtn = () => {
     const [openMenu, setOpenMenu] = React.useState(false);

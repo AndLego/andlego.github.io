@@ -13,6 +13,7 @@
     gap: 40px;
     font-size: 2rem;
     padding: 12px 0;
+    align-items: center;
 }
 
 .categories .activeCategory {
@@ -136,4 +137,14 @@
 .projectWrapper .card:hover .back a {
     opacity: 1;
     /* Los elementos de la parte trasera se muestran al hacer hover */
+}
+
+@media (max-width: 700px) {
+    .categories {
+        font-size: 1.6rem;
+        gap: 16px;
+        flex-wrap: wrap;
+        padding: 0 28px;
+    }
+
 }

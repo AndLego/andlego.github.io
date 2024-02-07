@@ -1,11 +1,8 @@
-import React from 'react';
 import { Link } from "react-router-dom"
 import style from "./Navbar.module.css"
 import Routes from './Routes/Routes';
 
 const Navbar = () => {
-    // efecto sticky al scroll
-
 
     return (
         <div className={style.navContainer}>
