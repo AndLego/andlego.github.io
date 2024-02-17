@@ -1,5 +1,4 @@
-import React from 'react';
-import style from "./Project.module.css"
+import style from "./Right.module.css"
 import { Link } from 'react-router-dom';
 import { options } from './Data';
 import Carrousel from './Carrousel/Carrousel';

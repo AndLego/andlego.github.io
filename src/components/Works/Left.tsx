@@ -1,7 +1,7 @@
 import React from 'react';
 import { CSSProperties } from 'react';
-import style from "./Works.module.css"
-import Project from './Project/Project';
+import style from "./Left.module.css"
+import Project from './Right/Right';
 
 const data = [
     "Front End",

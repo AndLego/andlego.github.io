@@ -70,6 +70,10 @@
         flex-direction: column;
     }
 
+    .works .left {
+        padding-bottom: 36px;
+    }
+
     .works .left ul {
         align-items: center;
     }

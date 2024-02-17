@@ -92,7 +92,9 @@
 }
 
 @media (max-width: 1250px) {
-    .right {}
+    .right {
+        padding-bottom: 32px;
+    }
 
     .right .imageContainer {
         width: 100%;

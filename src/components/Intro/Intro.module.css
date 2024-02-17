@@ -135,9 +135,13 @@
     bottom: 88px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 990px) {
 
-    .hero article h1{
+    .hero .imgContainer {
+        transform: translate(-54%, -45%);
+    }
+
+    .hero article h1 {
         font-size: 5.2rem;
     }
 
@@ -145,6 +149,7 @@
         margin: 0 auto;
         padding: 0 20px;
         text-align: center;
+        padding-bottom: 60px;
     }
 
     .hero {

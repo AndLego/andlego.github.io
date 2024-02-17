@@ -1,5 +1,5 @@
 import React from 'react';
-import style from "../Project.module.css"
+import style from "../Right.module.css"
 
 const Carrousel = ({ images = [] }: { images?: string[] }) => {
     /**code for image carrousel */
