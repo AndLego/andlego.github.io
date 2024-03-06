@@ -2,6 +2,7 @@ import React from 'react';
 import { CSSProperties } from 'react';
 import style from "./Left.module.css"
 import Project from './Right/Right';
+import Techs from './Techs';
 
 const data = [
     "Front End",
@@ -47,6 +48,7 @@ const Menu = () => {
                             {item}
                         </li>
                     )}
+                    <Techs />
                 </ul>
             </article>
             <RenderComponent work={work} />

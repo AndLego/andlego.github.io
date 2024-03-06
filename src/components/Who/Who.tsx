@@ -22,7 +22,7 @@ const Who = () => {
                     <div className={style.linea}></div>
                     <h3>Quien Soy</h3>
                 </div>
-                <p>Como apasionado desarrollador, encuentro mi impulso en la constante búsqueda de nuevas tecnologías. Cada descubrimiento se convierte en una oportunidad emocionante para aplicar soluciones innovadoras en cada proyecto, construyendo así un repertorio diverso y actualizado.</p>
+                <p>Como apasionado desarrollador, encuentro mi impulso en la constante búsqueda de nuevas tecnologías. Cada descubrimiento se convierte en una oportunidad emocionante para aplicar soluciones innovadoras en cada proyecto, construyendo así un repertorio diverso y actualizado. Dentro de mi Stack: Html, CSS, Javascript, React, Typescript, NodeJs, MongoDb, GraphQl</p>
 
             </article>
 
