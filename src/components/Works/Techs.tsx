@@ -1,4 +1,3 @@
-import React from 'react';
 import { SiTypescript, SiJavascript, SiGraphql, SiMongodb } from "react-icons/si";
 import { FaReact, FaHtml5, FaCss3, FaNodeJs } from "react-icons/fa6";
 import style from "./Left.module.css"
