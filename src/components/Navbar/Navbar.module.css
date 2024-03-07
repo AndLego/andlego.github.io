@@ -44,8 +44,11 @@ a {
 }
 
 .mobile {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas:
+        "top top"
+        "mid mid"
+        "left right";
     text-transform: capitalize;
     font-family: var(--normal);
     gap: 12px;
@@ -53,17 +56,6 @@ a {
     position: absolute;
     bottom: 112px;
     left: 160px;
-}
-
-.download {
-    font-family: var(--cursive);
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-    padding: 4px 8px;
-    border: none;
-    background-color: var(--negro-lv2);
-    color: var(--blanco);
-    border-radius: 4px;
 }
 
 .desktop {
@@ -79,15 +71,49 @@ a {
     text-transform: capitalize;
 }
 
-nav>ul .downloadDeskTop {
-    background-color: var(--resalto);
+
+/**ICONOS DE LINKS*/
+
+.desktop svg,
+.mobile svg {
+    font-size: 2.4rem;
+    transition: 0.3s ease-in-out;
+    vertical-align: middle;
+}
+
+.desktop svg {
     color: var(--blanco);
-    font-family: var(--cursive);
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 4px 8px;
-    letter-spacing: 1px;
-    border: none;
+}
+
+
+.mobile svg {
+    color: var(--negro-lv2);
+}
+
+.desktop svg:hover {
+    color: var(--resalto);
+    transform: scale(1.2);
+}
+
+.mobile svg:hover {
+    transform: scale(1.2);
+}
+
+.mobile>a:nth-child(1) {
+    grid-area: left;
+}
+
+.mobile>a:nth-child(2) {
+    grid-area: right;
+}
+
+.mobile>a:nth-child(3) {
+    grid-area: top;
+}
+
+.mobile>a:nth-child(4) {
+    grid-area: mid;
+
 }
 
 @media (max-width: 800px) {
@@ -95,5 +121,5 @@ nav>ul .downloadDeskTop {
         display: none;
     }
 
-    
+
 }

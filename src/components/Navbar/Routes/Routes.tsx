@@ -1,9 +1,17 @@
 import { NavLink } from "react-router-dom"
 import style from "../Navbar.module.css"
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Routes = ({ mobile, toggleMenu }: { mobile: string, toggleMenu?: () => void }) => {
     return (
-        <ul className={`${mobile === "desktop" ? style.desktop : style.mobile}`}>
+        <div className={`${mobile === "desktop" ? style.desktop : style.mobile}`}>
+            <a href="https://www.linkedin.com/in/andlego" target="_blank">
+                <FaLinkedin />
+            </a>
+            <a href="https://github.com/AndLego" target="_blank">
+                <FaGithub />
+            </a>
+
             {
                 rutas.map((ruta) => (
                     <NavLink key={ruta.id}
@@ -30,7 +38,7 @@ const Routes = ({ mobile, toggleMenu }: { mobile: string, toggleMenu?: () => voi
                     </NavLink>
                 ))
             }
-        </ul>
+        </div>
     );
 }
 
