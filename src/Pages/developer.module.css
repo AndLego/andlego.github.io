@@ -1,0 +1,64 @@
+.Container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Container form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 2rem;
+    font-family: var(--normal);
+}
+
+.Container form input {
+    width: 360px;
+    height: 40px;
+    margin: 4px 0 16px 0;
+    background-color: var(--blanco);
+    border: none;
+    border-radius: 8px;
+    padding: 0 8px;
+}
+
+.Container form textarea {
+    background-color: var(--blanco);
+    margin: 12px auto;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 16px;
+}
+
+.Container form select {
+    height: 40px;
+    width: 168px;
+    margin: 4px 0 16px 0;
+    background-color: var(--blanco);
+    border: none;
+    border-radius: 8px;
+    padding: 0 8px;
+}
+
+.Container form select option {
+    font-size: 1.6rem;
+}
+
+.Container button {
+    padding: 8px 16px;
+    font-size: 1.6rem;
+    background-color: var(--resalto);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s all ease-in;
+    align-self: self-end;
+}
+
+.Container button:hover {
+    background-color: tan
+}
